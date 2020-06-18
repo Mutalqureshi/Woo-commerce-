@@ -1,0 +1,3 @@
+	$pd_price = WC()->cart->cart_contents_total;
+	$sh_price = WC()->session->get('cart_totals')['shipping_total'];
+	echo $pd_price + $sh_price;
